@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/10/2016, 15:35:55
+    Author     : Roni
+*/
+
+/**
+    Deixa o rodapé sempre na parte inferior
+*/
+body {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    font-family: "Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.texto-index-usuario, .texto-espacial, .texto-form{
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	color: #767777;
+}
+
+.font-login{
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	color: #767777;
+	font-size: 60px;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.font-rodape{
+	color: #767777;
+	font-weight: 300;
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-size: 21px;
+	line-height: 1;
+}
+
+/*
+@font-face {
+    font-family: Roboto;
+    src: url(../node_modules/materialize-css/fonts/roboto/Roboto-Light.ttf);
+}
+*/
+.utf-logo{
+    height: 1.6em;
+    margin-top: 0.2em;
+}
+
+.utf-logo-nav{
+    width: 8em;
+    margin-top: 1em;
+}
+
+.utf-info{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
