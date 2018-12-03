@@ -58,7 +58,7 @@ INSERT INTO usuarios VALUES ('admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c87
 
 CREATE TABLE roles (
     login varchar(20) NOT NULL,
-        role varchar(20) NOT NULL,  
+    role varchar(20) NOT NULL,  
     primary key(login, role)
 );
 
