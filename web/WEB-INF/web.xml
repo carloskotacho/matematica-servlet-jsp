@@ -9,4 +9,50 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <security-role>
+    <role-name>ADMINISTRADOR</role-name>
+  </security-role>
+  <security-role>
+    <role-name>USUARIO</role-name>
+  </security-role>
+  <security-constraint>
+    <display-name>Segurança para o diretório de admin</display-name>
+    <web-resource-collection>
+      <web-resource-name>Somente Administração</web-resource-name>
+      <url-pattern>/a/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>ADMINISTRADOR</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <security-constraint>
+    <display-name>Segurança para o diretório de usuários</display-name>
+    <web-resource-collection>
+      <web-resource-name>Somente Usuários</web-resource-name>
+      <url-pattern>/WEB-INF/view/forms/*</url-pattern>
+      <url-pattern>/u/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>USUARIO</role-name>
+      <role-name>ADMINISTRADOR</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <form-login-config>
+      <form-login-page>/form-login.jsp</form-login-page>
+      <form-error-page>/WEB-INF/view/errors/error.jsp</form-error-page>
+    </form-login-config>
+  </login-config>
+  <error-page>
+    <error-code>403</error-code>
+    <location>/WEB-INF/view/errors/proibido.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/WEB-INF/view/errors/naoexiste.jsp</location>
+  </error-page>
+  <error-page>
+    <location>/error-handler</location>
+  </error-page>
 </web-app>
