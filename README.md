@@ -39,7 +39,7 @@ Desenvolver um sistema utilizando as tecnologias Servlets e JSP com o padrão MV
 * **Template**
 
 ### Inicial #1:
-Certifique-se sobre as credenciais do seu banco de dados. `MysqlDataBase.java`
+Verifique se as credenciais do banco de dados estão corretas. `MysqlDataBase.java`
 
 |  URL   |  DATABASE |  DRIVER_CLASS   |  USER  |  PASSWORD |
 | :----: | :-------: | :--------------:| :-----:| :--------:|
