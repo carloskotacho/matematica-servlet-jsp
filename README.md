@@ -5,9 +5,6 @@
 <a href="https://travis-ci.org/carloskotacho/matematica-servlet-jsp">
   <img src="https://travis-ci.org/carloskotacho/matematica-servlet-jsp.svg?branch=master" alt="Build Status" height="21">
 </a>
-  <a href="https://mathematics-spring.herokuapp.com">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" height="22">
-</a>
 </p>
 
 <strong>Carlos Henrique K. Pereira</strong>
