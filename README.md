@@ -11,7 +11,7 @@ Prof. Dr. Roni Fabio Banaszewski
 ***
 
 ### **Primeira Avaliação**
-Desenvolver um sistema utilizando as tecnologias Servlets e JSP com o padrão MVC.
+Desenvolver um sistema utilizando as tecnologias Servlets e JSP com o padrão MVC. ([Prova 2 - Spring](https://github.com/carloskotacho/mathematics-spring))
 
 ### Tópicos:
 
@@ -38,7 +38,14 @@ Desenvolver um sistema utilizando as tecnologias Servlets e JSP com o padrão MV
     * if
 * **Template**
 
-### Inicial #1: Criar um admin
+### Inicial #1:
+Verifique se as credenciais do banco de dados estão corretas. `MysqlDataBase.java`
+
+|  URL   |  DATABASE |  DRIVER_CLASS   |  USER  |  PASSWORD |
+| :----: | :-------: | :--------------:| :-----:| :--------:|
+| jdbc:mysql://127.0.0.1/ | `matematica` | com.mysql.jdbc.Driver | `root` | `12345` |
+
+Crie um admin.
 
 login: `admin`
 <br/>
